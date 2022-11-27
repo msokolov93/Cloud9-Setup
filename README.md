@@ -1,6 +1,6 @@
 # cloud9setup
 
-<sub>Step 1: Setting up git with SSH access</sub>
+<sup>Step 1: Setting up git with SSH access</sup>
 
 Run this script:
 
