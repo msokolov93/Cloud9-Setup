@@ -13,7 +13,7 @@ cat /home/ec2-user/.ssh/id_rsa.pub
 
 #### In Github: 
 
-Settings -> SSH and GPG keys -> New SSH key -> add output from step 1 -< add SSH key
+Settings -> SSH and GPG keys -> New SSH key -> add output from step 1 -< Add SSH key
 
 ![screenshot](https://github.com/msokolov93/cloud9setup/blob/main/Screenshot%202022-11-27%20150807.png?raw=true)
 
