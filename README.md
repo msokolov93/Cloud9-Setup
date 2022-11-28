@@ -82,3 +82,8 @@ After consecutive logins run command to clear session:
 ```
 unset AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN AWS_SECURITY_TOKEN
 ```
+
+To verify Cloud9AdminRole is used, type:
+```
+aws sts get-caller-identity
+```
