@@ -52,9 +52,11 @@ Add your **role ARN** accordingly
 #### Attach policy to IAM Role that you will store keys for
 Example: MyUser
 
+Attach Cloud9AssumeRolePolicy to MyUser
+
 Create a new keypair or write down existing **Access key ID** and **Secret access key**
 
-### Configure CLI environment with created keypair
+### Authorize CLI environment with created keypair from MyUser
 ```
 export AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE
 export AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
@@ -70,7 +72,7 @@ For the next step jq is required:
 sudo yum install jq
 ```
 
-then run command with Cloud9 **Role ARN**:
+To Authorize CLI run command with required Cloud9 **Role ARN**:
 ```
 OUT=$(aws sts assume-role --role-arn arn:aws:iam::112233445566:role/Cloud9AdminRole --role-session-name MySessionName);\
 export AWS_ACCESS_KEY_ID=$(echo $OUT | jq -r '.Credentials''.AccessKeyId');\
