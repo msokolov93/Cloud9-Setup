@@ -52,7 +52,7 @@ Add your **role ARN** accordingly
 #### Attach policy to IAM Role that you will store keys for
 Example: MyUser
 
-Create a new keypair or write down existing one **Access key ID** and **Secret access key**
+Create a new keypair or write down existing **Access key ID** and **Secret access key**
 
 ### Configure CLI environment with created keypair
 
