@@ -57,8 +57,8 @@ Create a new keypair or write down existing **Access key ID** and **Secret acces
 ### Configure CLI environment with created keypair
 
 ```
-export AWS_ACCESS_KEY_ID=**AKIAIOSFODNN7EXAMPLE**
-export AWS_SECRET_ACCESS_KEY=**wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY**
+export AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE
+export AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 ``` 
 then run command with Cloud9 **Role ARN**:
 ```
