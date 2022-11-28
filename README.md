@@ -32,7 +32,7 @@ git clone git@github.com:msokolov93/cloud9setup.git
 ### Create IAM entities
 
 #### Create IAM role for Cloud9 with required presmissions and write down role arn
-Example: arn:aws:iam::~~112233445566~~:role/Cloud9AdminRole
+Example: arn:aws:iam::112233445566:role/Cloud9AdminRole
 
 #### Create IAM Policy to further assume this role
 Example: Cloud9AssumeRolePolicy
