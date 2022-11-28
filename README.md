@@ -55,11 +55,21 @@ Example: MyUser
 Create a new keypair or write down existing **Access key ID** and **Secret access key**
 
 ### Configure CLI environment with created keypair
-
 ```
 export AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE
 export AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 ``` 
+
+verify MyUser login is successful by running command:
+```
+aws sts get-caller-identity
+```
+
+For the next step jq is required:
+```
+sudo yum install jq
+```
+
 then run command with Cloud9 **Role ARN**:
 ```
 OUT=$(aws sts assume-role --role-arn arn:aws:iam::112233445566:role/Cloud9AdminRole --role-session-name MySessionName);\
